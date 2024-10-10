@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of all Posts</h1>  
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                {% for i in posts %}
+                <div class="col-md-4">
+                    <div class="card card-body">
+                        <p>{{ i.post_name }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
